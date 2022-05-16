@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@types/react": "^17.0.38",
+    "cypress": "^9.2.1",
+    "jest-dom": "^4.0.0",
+    "jest-junit": "^13.0.0"
+  },
+  "devDependencies": {
+    "@tpio/javascript-opensdk": "^0.1.1",
+    "selenium-webdriver": "^4.1.1"
+  }
+}

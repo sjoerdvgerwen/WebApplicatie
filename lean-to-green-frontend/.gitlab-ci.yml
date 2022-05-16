@@ -1,0 +1,45 @@
+stages:
+  - build
+  - test
+  - security
+  - deploy
+
+build:
+  stage: build
+  image: node:15
+  script: 
+    - echo "Start building App"
+    - npm install
+    - npm build
+    - echo "Build successfully!"
+
+test:
+  stage: test
+  image: node
+  script:
+    - echo "Testing App"
+    - npm install
+    - CI=true npm test
+    - echo "Test successfully!"
+
+security:
+  stage: security
+  tags:
+    - cq-sans-dind     
+  artifacts:
+    paths: [gl-sast-report.json]
+
+
+variables:
+  LATEST_VER: sjoerdvgerwen/lean_to_green
+
+deploy:
+  stage: deploy
+  services: 
+      - docker:dind
+  before_script:
+      - echo "$REGISTRY_PASSWORD" | docker login -u "$REGISTRY_USER" --password -stdin
+  script:
+      - docker info
+      - docker build -t $LATEST_VER .
+      - docker push $LATEST_VER

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Lean-To-Green",
+    "\\Lean-To-Green\\Lean-To-Green.Core",
+    "\\Lean-To-Green\\Lean-To-Green.Core\\Entities",
+    "\\Lean-To-Green\\Lean-To-Green.Core\\Interfaces",
+    "\\Lean-To-Green\\Lean-To-Green\\Controllers"
+  ],
+  "SelectedNode": "\\Lean-To-Green\\Lean-To-Green.Core\\Interfaces\\ISolarFieldRepository.cs",
+  "PreviewInSolutionExplorer": false
+}

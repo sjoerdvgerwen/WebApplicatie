@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = Lean_To_Green.Core
+build_property.ProjectDir = C:\Users\sjoer\Documents\School\S3\Individueel\Individueel Project\Lean-To-Grean-BackEnd\Lean-To-Green\Lean-To-Green.Core\
